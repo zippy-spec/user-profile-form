@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Tags and Form Components</title>
+
+<style>
+
+/* -------- FIRST SECTION STYLE (HTML TAGS) -------- */
+
+body{
+font-family: Arial;
+background:#f4f6f9;
+padding:40px;
+line-height:1.6;
+}
+
+.section1{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+margin-bottom:40px;
+}
+
+.section1 h1{
+color:#2c3e50;
+}
+
+.section1 a{
+color:#1e90ff;
+font-weight:bold;
+text-decoration:none;
+}
+
+.section1 a:hover{
+color:#e74c3c;
+text-decoration:underline;
+}
+
+/* -------- SECOND SECTION STYLE (FORM COMPONENTS) -------- */
+
+.container{
+width:600px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.container h1{
+text-align:center;
+color:#2c3e50;
+}
+
+dt{
+font-weight:bold;
+color:#34495e;
+margin-top:15px;
+}
+
+dd{
+margin-left:20px;
+color:#555;
+}
+
+.example{
+margin-top:5px;
+}
+
+input,textarea,button{
+padding:8px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- -------- FIRST HTML TAG SECTION -------- -->
+
+<div class="section1">
+
+<h1>HTML Tags</h1>
+
+<h2>&lt;a&gt; Tag</h2>
+
+<p>
+The <b>&lt;a&gt;</b> tag is used to create hyperlinks that connect a web page 
+to another section on the same web page, or to another web page. It can also 
+be used to allow users to download files. The <b>href</b> attribute specifies 
+the destination where the user will be taken after clicking the link.
+</p>
+
+<h5>General Syntax of a Tag</h5>
+
+<p>
+&lt;a href="destination"&gt;Target Destination&lt;/a&gt;
+</p>
+
+<p>
+Task: Create a link that when clicked will take the user to the HTML 
+documentation on anchor tag. Link name should be <b>HTML Element</b>.
+</p>
+
+<a href="https://html.com/tags/a/" target="_blank">HTML Element</a>
+
+<hr>
+
+<p>
+A list is a sequence of items arranged in a particular order. HTML organizes
+content into ordered lists, unordered lists, or definition lists to make
+information clear and easy to read.
+</p>
+
+<p>Types of lists in HTML:</p>
+
+<ol>
+<li>Ordered List</li>
+<li>Unordered List</li>
+<li>Definition List</li>
+</ol>
+
+<h5>Ordered List</h5>
+
+<p>
+In an ordered list, items are labeled using numbers or letters such as
+A, B, C or Roman numerals.
+</p>
+
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+</ol>
+
+<p><b>Task: Create a list of 5 common HTML tags</b></p>
+
+<ol>
+<li>Anchor tag</li>
+<li>Form tag</li>
+<li>Table tag</li>
+<li>Div tag</li>
+<li>Image tag</li>
+</ol>
+
+<h6>Unordered List</h6>
+
+<p>It uses bullets instead of numbering items.</p>
+
+<p><b>Task: Create a list of least favorite tags</b></p>
+
+<ul type="square">
+<li>img</li>
+<li>table</li>
+<li>form</li>
+<li>div</li>
+</ul>
+
+<hr>
+
+<h3>Definition List</h3>
+
+<dl>
+
+<dt>Internet Application Programming</dt>
+
+<dd>
+It is the process of designing, building, and deploying software applications 
+that run over the internet.
+</dd>
+
+</dl>
+
+</div>
+
+<!-- -------- SECOND SECTION (FORM COMPONENTS) -------- -->
+
+<div class="container">
+
+<h1>HTML Form Components</h1>
+
+<dl>
+
+<dt>Form Tag</dt>
+<dd>Used to create a form that collects user input.</dd>
+<dd class="example">
+<form>
+<input type="text" placeholder="Enter your name">
+</form>
+</dd>
+
+<dt>Label</dt>
+<dd>Provides a description for an input field.</dd>
+<dd class="example">
+<label>Email:</label>
+<input type="email">
+</dd>
+
+<dt>Input Field</dt>
+<dd>Allows users to enter information such as text or password.</dd>
+<dd class="example">
+<input type="text" placeholder="Username">
+</dd>
+
+<dt>Radio Button</dt>
+<dd>Allows a user to choose one option from multiple choices.</dd>
+<dd class="example">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</dd>
+
+<dt>Textarea</dt>
+<dd>Allows the user to enter longer text such as comments.</dd>
+<dd class="example">
+<textarea rows="3" cols="30"></textarea>
+</dd>
+
+<dt>Submit Button</dt>
+<dd>Sends form data to the server.</dd>
+<dd class="example">
+<input type="submit" value="Submit">
+</dd>
+
+<dt>Reset Button</dt>
+<dd>Clears all the entered data in the form.</dd>
+<dd class="example">
+<input type="reset" value="Clear">
+</dd>
+
+</dl>
+
+</div>
+
+</body>
+</html>
